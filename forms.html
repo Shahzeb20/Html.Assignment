@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 6 - Chapter 6 - Forms</title>
+  </head>
+  <body>
+    <form action="https://www.google.com" method="post">
+    <fieldset>
+        <legend>Submit Your Info</legend>
+      <h1>Application Form</h1>
+      <label for="F-Name">First Name:</label>
+      <input type="text" name="First Name" id="" placeholder="Type Your Name" />
+      <label for="L-Name">last Name:</label>
+      <input
+        type="text"
+        name="Last Name:"
+        id=""
+        placeholder="Type Your Father Name"
+      /><br /><br />
+      <label for="D.O.B">Date of Birth:</label>
+      <input
+        type="date"
+        name="Date of Birth"
+        id=""
+        placeholder="mm / dd / yyyy"
+      />
+      <label for="time">Time:</label>
+      <input type="time" name="Time" id="" />
+      <label for="Age">Age:</label>
+      <input type="number" name="Age" id="" placeholder="Type Your Age " />
+      <br /><br />
+      <label for="Gender">Gender:</label>
+      <select name="Gender" id="Gender">
+        <option disabled selected="Select Your Gender">
+          Select Your Gender
+        </option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <label for="email:">Email:</label>
+      <input type="email" name="Email" id="" placeholder="Enter Your Email" />
+      <br />
+      <p>
+        Position Available:
+        <input type="radio" name="radio" id="Junior Developer" checked />
+        <label for="Junior Developer">Junior Developer</label>
+        <input type="radio" name="radio" id="Mid-Level Developer" />
+        <label for="Mid-Level Developer">Mid-Level Developer</label>
+        <input type="radio" name="radio" id="Senior Developer" />
+        <label for="Senior Developer">Senior Developer</label>
+      </p>
+      <p>
+        Programming Languages:
+        <input type="checkbox" name="checkbox" id="Java" />
+        <label for="Java">Java</label>
+        <input type="checkbox" name="checkbox" id="JavaScript" />
+        <label for="JavaScript">JavaScript</label>
+        <input type="checkbox" name="checkbox" id="Python" checked />
+        <label for="Python">Python</label>
+      </p>
+      <label for="Password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id=""
+        maxlength="10"
+        placeholder="Type Your Password"
+      />
+      <label for="C-Password">Confirm Password:</label>
+      <input
+        type="password"
+        name="Confirm password"
+        size="26"
+        maxlength="10"
+        placeholder="Type Your Confirm Password"
+      />
+      <br><br>
+      <select name="Hobbies" id="Select Hobbies" size="5" multiple >
+      <option value disabled="Select Your Hoobies">Select Your Hobbies</option>
+      <option value="Reading & Reciting Holy Quran">Reading & Reciting Holy Quran</option>
+      <option value="Reading Books">Reading Books</option>
+      <option value="Playing Games">Playing Games</option>
+      <option value="Writing">Writing</option>
+      <option value="Watching Geographic Channel">Watching Geographic Channel</option>
+      <option value="Riding Bike">Riding Bike</option>
+    </select>
+      <br /><br />
+      <label for="Comment">Comments</label> <br />
+      <textarea name="Commect" id="" cols="20" rows="10"></textarea><br /><br />
+      <input type="file" name="Browser" id="" />
+      <br />
+      <br />
+      <input type="submit" name="Submit" value="Submit Your Application" />
+      <input type="submit" name="Reset" value="Reset" id="" />
+    </fieldset>
+    </form>
+  </body>
+</html>
